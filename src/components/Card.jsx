@@ -18,8 +18,7 @@ export default function Card({ beer}) {
           alt="Beer Thumbnail"
           style={{
             height: '200px',
-            objectFit: 'cover',
-            cursor: 'pointer',
+            cursor: 'pointer'
           }}
           onClick={handleShow}
         />
