@@ -25,9 +25,9 @@ export default function Card({ beer}) {
         />
         <div className="card-body">
           <h5 className="card-title">{beer.name.substr(0,25)+"..."}</h5>
-          <p className="card-text"><b>Price:</b> {beer.price}</p>
-          <p className="card-text"><b>Rating:</b> {beer.rating.average.toFixed(2)}</p>
-          <p className="card-text"><b>Reviews:</b> {beer.rating.reviews}</p>
+          <p className="card-text"><b>Price:</b> {beer?.price}</p>
+          <p className="card-text"><b>Rating:</b> {beer?.rating?.average?.toFixed(2)}</p>
+          <p className="card-text"><b>Reviews:</b> {beer?.rating?.reviews}</p>
           <div className="d-flex flex-column justify-content-end">
             <Button className="btn btn-primary m-2" onClick={handleShow}>
               View Beer <i className="fa fa-eye" aria-hidden="true"></i>
@@ -44,9 +44,9 @@ export default function Card({ beer}) {
           <Row>
             <Col xs={6}>
               <div>
-                <p><b>Price:</b> {beer.price}</p>
-                <p><b>Rating:</b> {beer.rating.average.toFixed(2)}</p>
-                <p><b>Reviews:</b> {beer.rating.reviews}</p>
+                <p><b>Price:</b> {beer?.price}</p>
+                <p><b>Rating:</b> {beer?.rating?.average?.toFixed(2)}</p>
+                <p><b>Reviews:</b> {beer?.rating?.reviews}</p>
               </div>
             </Col>
             <Col xs={6}>
